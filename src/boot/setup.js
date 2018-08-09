@@ -1,11 +1,9 @@
 import {AppLoading, Font} from "expo";
 import React, { Component } from "react";
 import { StyleProvider } from "native-base";
-
-import App from "../App";
 import getTheme from "../theme/components";
 import variables from "../theme/variables/commonColor";
-
+import HomeScreen from "../HomeScreen/index.js";
 export default class Setup extends Component {
   constructor() {
     super();
@@ -30,7 +28,7 @@ export default class Setup extends Component {
     }
     return (
       <StyleProvider style={getTheme(variables)}>
-        <App />
+        <HomeScreen />
       </StyleProvider>
     );
   }
